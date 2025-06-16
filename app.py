@@ -14,8 +14,8 @@ with open("styles/styles.css") as f:
 
 @st.cache_data
 def load_data():
-    despesas = pd.read_csv("despesas.csv", sep=None, engine="python")
-    pendentes = pd.read_csv("pendentes.csv", sep=None, engine="python")
+    despesas = pd.read_csv("assets/despesas.csv", sep=None, engine="python")
+    pendentes = pd.read_csv("assets/pendentes.csv", sep=None, engine="python")
 
     # Formatando dados
     despesas['Data'] = pd.to_datetime(despesas.iloc[:, 0], dayfirst=True)
