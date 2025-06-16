@@ -6,9 +6,6 @@ import plotly.express as px
 st.set_page_config(page_title="Dashboard - IASD Graças", layout="wide")
 tema_plotly = "plotly"  # Tema padrão
 
-with open("styles/styles.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 # Carregando os dados
 
 
